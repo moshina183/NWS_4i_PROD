@@ -1,0 +1,61 @@
+2024-09-24 14:50:38,587 INFO [RMI TCP Connection(325)-127.0.0.1] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [SpringApplicationAdminMXBeanRegistrar.java:159] 
+Application shutdown requested.
+2024-09-24 14:50:38,590 DEBUG [RMI TCP Connection(325)-127.0.0.1] o.s.b.a.ApplicationAvailabilityBean [ApplicationAvailabilityBean.java:77] 
+Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2024-09-24 14:50:38,591 DEBUG [RMI TCP Connection(325)-127.0.0.1] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [AbstractApplicationContext.java:1049] 
+Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@36b0fcd5, started on Tue Sep 24 09:33:12 GST 2024
+2024-09-24 14:50:38,594 DEBUG [RMI TCP Connection(325)-127.0.0.1] o.s.c.s.DefaultLifecycleProcessor [DefaultLifecycleProcessor.java:365] 
+Stopping beans in phase 2147483647
+2024-09-24 14:50:38,596 DEBUG [RMI TCP Connection(325)-127.0.0.1] o.s.c.s.DefaultLifecycleProcessor [DefaultLifecycleProcessor.java:238] 
+Bean 'webServerGracefulShutdown' completed its stop procedure
+2024-09-24 14:50:38,596 DEBUG [RMI TCP Connection(325)-127.0.0.1] o.s.c.s.DefaultLifecycleProcessor [DefaultLifecycleProcessor.java:365] 
+Stopping beans in phase 2147483646
+2024-09-24 14:50:38,613 INFO [RMI TCP Connection(325)-127.0.0.1] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] 
+Pausing ProtocolHandler ["http-nio-9999"]
+2024-09-24 14:50:38,613 INFO [RMI TCP Connection(325)-127.0.0.1] o.a.c.c.StandardService [DirectJDKLog.java:173] 
+Stopping service [Tomcat]
+2024-09-24 14:50:38,620 INFO [RMI TCP Connection(325)-127.0.0.1] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] 
+Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-09-24 14:50:38,625 WARN [RMI TCP Connection(325)-127.0.0.1] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] 
+The web application [ROOT] appears to have started a thread named [logback-8] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.7/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.7/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+ java.base@17.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+ java.base@17.0.7/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3463)
+ java.base@17.0.7/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3434)
+ java.base@17.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+ java.base@17.0.7/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1170)
+ java.base@17.0.7/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.7/java.lang.Thread.run(Thread.java:833)
+2024-09-24 14:50:38,626 WARN [RMI TCP Connection(325)-127.0.0.1] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] 
+The web application [ROOT] appears to have started a thread named [Timer-0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.7/java.lang.Object.wait(Native Method)
+ java.base@17.0.7/java.lang.Object.wait(Object.java:338)
+ java.base@17.0.7/java.util.TimerThread.mainLoop(Timer.java:537)
+ java.base@17.0.7/java.util.TimerThread.run(Timer.java:516)
+2024-09-24 14:50:38,627 WARN [RMI TCP Connection(325)-127.0.0.1] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] 
+The web application [ROOT] appears to have started a thread named [oracle.jdbc.driver.BlockSource.ThreadedCachingBlockSource.BlockReleaser] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.7/java.lang.Object.wait(Native Method)
+ app//oracle.jdbc.driver.BlockSource$ThreadedCachingBlockSource$BlockReleaser.run(BlockSource.java:331)
+2024-09-24 14:50:38,628 WARN [RMI TCP Connection(325)-127.0.0.1] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] 
+The web application [ROOT] appears to have started a thread named [InterruptTimer] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.7/java.lang.Object.wait(Native Method)
+ java.base@17.0.7/java.util.TimerThread.mainLoop(Timer.java:563)
+ java.base@17.0.7/java.util.TimerThread.run(Timer.java:516)
+2024-09-24 14:50:38,631 INFO [RMI TCP Connection(325)-127.0.0.1] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] 
+Stopping ProtocolHandler ["http-nio-9999"]
+2024-09-24 14:50:38,636 INFO [RMI TCP Connection(325)-127.0.0.1] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] 
+Destroying ProtocolHandler ["http-nio-9999"]
+2024-09-24 14:50:38,636 DEBUG [RMI TCP Connection(325)-127.0.0.1] o.s.c.s.DefaultLifecycleProcessor [DefaultLifecycleProcessor.java:238] 
+Bean 'webServerStartStop' completed its stop procedure
+2024-09-24 14:50:38,637 DEBUG [RMI TCP Connection(325)-127.0.0.1] o.s.c.s.DefaultLifecycleProcessor [DefaultLifecycleProcessor.java:365] 
+Stopping beans in phase -2147483647
+2024-09-24 14:50:38,637 DEBUG [RMI TCP Connection(325)-127.0.0.1] o.s.c.s.DefaultLifecycleProcessor [DefaultLifecycleProcessor.java:238] 
+Bean 'springBootLoggingLifecycle' completed its stop procedure
+2024-09-24 14:50:38,638 DEBUG [RMI TCP Connection(325)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter [MBeanExporter.java:452] 
+Unregistering JMX-exposed beans on shutdown
+2024-09-24 14:50:38,639 DEBUG [RMI TCP Connection(325)-127.0.0.1] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] 
+Shutting down ExecutorService 'applicationTaskExecutor'
